@@ -7,7 +7,7 @@ var Wechat = require('./wechat')
 var util = require('./util')
 
 module.exports = function(opts){
-	// var wechat = new Wechat(opts)
+	var wechat = new Wechat(opts)
 
 	return function *(next){
 		var token = opts.token
@@ -43,23 +43,11 @@ module.exports = function(opts){
 			var message = util.formatMessage(content.xml)
 			console.log(message)
 
-			if(message.MsgType === 'event'){
-				if(message.Event === 'subscribe'){
-					var now = new Date().getTime()
+			this.weixin = message
 
-					this.status = 200
-					this.type = 'application/xml'
-					this.body = ' <xml>' +
-						 '<ToUserName><![CDATA['+ message.FromUserName +']]></ToUserName>' +
-						 '<FromUserName><![CDATA['+ message.ToUserName +']]></FromUserName> ' +
-						 '<CreateTime>'+ now +'</CreateTime>' +
-						 '<MsgType><![CDATA[text]]></MsgType>' +
-						 '<Content><![CDATA[你好哇,李银河!]]></Content>' +
-						 '<MsgId>'+ message.MsgId +'</MsgId>' +
-						 '</xml>'
-					return 	 
-				}
-			}
+			// yield handler.call(this,next)
+			console.log('this:'+ this._proto_)
+			wechat.reply.call(this)
 		}
 	}
 }
