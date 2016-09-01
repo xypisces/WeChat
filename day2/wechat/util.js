@@ -49,20 +49,20 @@ exports.formatMessage = formatMessage
 exports.tpl = function(content,message){
 	var info = {}
 	var type = 'text'
-	var formUserName = message.FormUserName
+	var fromUserName = message.FromUserName
 	var toUserName = message.ToUserName
+	var msgId = message.MsgId
 
 	if(Array.isArray(content)){
 		type = 'news'
 	}
-	// type = content.type || type
-	console.log(type+'/n')
-	console.log(content)
+	type = content.type || type
+
 	info.content = content
 	info.createTime = new Date().getTime()
-	info.msgType = type 
-	info.toUserName = formUserName
-	info.formUserName = toUserName
-
+	info.msgType = type
+	info.toUserName = fromUserName
+	info.fromUserName = toUserName
+	info.msgId = msgId
 	return tpl.compiled(info)
 }

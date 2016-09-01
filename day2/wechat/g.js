@@ -6,7 +6,7 @@ var getRawBody = require('raw-body')
 var Wechat = require('./wechat')
 var util = require('./util')
 
-module.exports = function(opts){
+module.exports = function(opts,handler){
 	var wechat = new Wechat(opts)
 
 	return function *(next){
@@ -44,10 +44,10 @@ module.exports = function(opts){
 			console.log(message)
 
 			this.weixin = message
-
-			// yield handler.call(this,next)
-			console.log('this:'+ this._proto_)
+			yield handler.call(this,next)				
 			wechat.reply.call(this)
+
+			console.log(this.body)
 		}
 	}
 }
