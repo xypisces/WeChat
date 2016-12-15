@@ -1,0 +1,129 @@
+body{
+	font-size: 16px;
+	background-color: #e0e0e0;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#app{
+	width: 100%;
+	padding: 1rem 3rem 3rem 1rem;
+	display: flex;
+}
+/* 侧边 */
+.aside{
+	color: #fff;
+	font-size: 14px;
+	width: 15%;
+	height: 100%;
+	background-color: #333;
+	box-sizing: border-box;
+	box-shadow:-6px 5px 5px #888888;
+	text-align: center;
+}
+.aside-img{
+	display: block;
+	margin: 0 auto;
+	border-radius: 100%;
+	margin-top: 2rem;
+	width: 60%;
+	border: 5px solid #ddd;
+}
+.aside i{
+	font-size: 1.2rem;
+	margin-right: 0.5rem;
+}
+.aside span{
+	font-size: 1.2rem;
+	text-shadow: 1px 2px #555,2px 4px #555;
+}
+.aside h1{
+	font-size: 2.5rem;
+	text-shadow: 1px 2px #777,2px 4px #777;
+}
+.aside h3{
+	font-size: 1.5rem;
+	text-shadow: 1px 2px #777,2px 4px #777;
+}
+.aside ul{
+	margin-top: 3rem;
+	list-style: none;
+	padding: 0;
+}
+.aside-ul li{
+	padding: 1.5rem 0;
+	margin-top: 1rem;
+}
+.aside-ul a{
+	background-color: #00B5AD;
+	display: block;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 2px 4px #00968f,4px 6px #00968f;
+}
+.aside-ul a:hover{
+	background-color: #00968f;
+	transition:0.6s;
+}
+
+/* main */
+
+.section{
+	text-align: center;
+	width: 85%;
+	background-color: #fff;
+	box-shadow: 5px 5px 5px #888888;
+}
+.section-h1{
+	padding: 5rem 0;
+	font-size: 11rem;
+	color: #00B5AD;
+	text-shadow: 4px 6px #00968f,6px 8px #00968f;
+}
+#label-text{
+	color: #777;
+}
+.section-text{
+	margin: 2.5rem auto;
+	width: 40%;
+	
+	padding: 3rem 1rem;
+	background-color: #fff;
+	color: #333;
+	box-shadow: 4px 4px #ddd,-4px -4px #ddd;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+.section-p{
+	color: #00968f;
+	font-size: 1.3rem;
+}
+/* main-1 */
+.skills{
+	width: 80%;
+	margin: 8rem auto;
+}
+#skills-text span{
+	color:  #00B5AD;
+}
+#skills-text .header{
+	font-size: 1.4rem;
+	margin-bottom: 0.5rem;
+}
+
+/* main-2 */
+.section-3{
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 15%;
+}
+.school{
+	padding-bottom: 0.5rem;
+}
+
+/* main-3 */
+.section-4{
+	width: 50%;
+	text-align: left;
+	margin: 0 auto;
+	margin-top: 5%;
+}

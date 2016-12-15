@@ -1,0 +1,121 @@
+.main{
+	background: url(../img/bg1.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.bg{
+	background:rgba(0,0,0,0.4);
+	height: 700px;
+}
+.link{
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 100px; 
+    width: 300px;
+}
+.link h1{
+	
+	padding: 10px;
+	display: inline-block;
+	color: #fff;
+	font-size: 50px;
+	font-weight: 700;
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+.link h2{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+	border-bottom: 2px solid #fff;
+	padding-bottom: 20px;
+}
+.link ul{
+	list-style: none;
+}
+.link li{
+	padding-top: 10px;
+	float: left;
+}
+.link i{
+	color: #fff;
+	padding-right: 10px;
+}
+.link a{
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	transition:0.4s;
+}
+.link a:hover{
+	color:#FFB900;
+}
+.content{
+	background: #F2F2F2;
+	padding: 30px;
+}
+.picture{
+	width: 200px;
+	height: 200px;
+	margin:10px auto;
+	border-radius: 50%;
+	overflow: hidden;
+
+}
+.picture img{
+	width: 200px;
+	height: 200px;
+}
+.box{
+	margin-left: 100px;
+	padding-bottom: 30px;
+	margin: 0px 40px;
+	border-left: 4px solid #FFB900;	
+}
+.edu{
+	width: 600px;
+}
+.edu i{
+	position: relative;
+	left: -25px;
+	background: #FFB900;
+	color: #fff;
+	border-radius: 50%;	
+	padding: 10px;
+}
+.edu h1{
+	color:#FFB900;
+	display: inline-block;
+	margin: 0px;
+	font-weight: 700;
+	font-size: 25px;
+	border: 1px solid #FFB900;
+	padding: 5px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+.edu .time{
+	color:#FFB900;
+	font-size: 20px;
+	padding-left: 50px;
+}
+.edu .name{
+	padding-bottom: 10px;
+	margin: 0px;
+	font-size: 18px;
+	padding-left: 50px;
+}
+
+
+
+.bottom{
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	padding: 10px;
+	padding-top: 30px;	
+	margin: 0
+}
